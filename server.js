@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.post("/deploy", (req, res) => {
-  console.log("Deploy triggered...");
+  console.log("Deploy triggered......");
 
   exec("git pull origin main && npm install", (err, stdout, stderr) => {
     if (err) {
